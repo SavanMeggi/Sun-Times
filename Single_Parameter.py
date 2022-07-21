@@ -2,16 +2,18 @@ import requests
 
 from Single_Parameter_Model import SingleParameterModel
 
+
 class SingleParameter:
 
-    def __init__(self, lan = '51.500153'):
-        self.URL = 'https://api.sunrise-sunset.org/json?' + lan
+    def __init__(self, lat):
+        self.URL = 'https://api.sunrise-sunset.org/json?' + lat
         self.request = requests.get(self.URL)
         self.resp_json = self.request.json()
+        print(self.resp_json)
 
     def data_response(self):
         return SingleParameterModel(self.resp_json)
 
-latitude = SingleParameter('lan=51.500153')
 
-print(latitude.data_response())
+x = SingleParameter('lat=4.4')
+print(x.data_response().sunrise)

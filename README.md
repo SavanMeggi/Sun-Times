@@ -1,2 +1,2 @@
-# Zoo-Aminals
+# Sun-Times
 API

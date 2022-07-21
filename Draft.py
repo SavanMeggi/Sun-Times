@@ -1,6 +1,6 @@
 import requests
 
-zoo_animals = requests.get('https://zoo-animal-api.herokuapp.com/animals')
+zoo_animals = requests.get('https://zoo-animal-api.herokuapp.com/animals/rand')
 
-print(zoo_animals.json()) 
+print(zoo_animals.json())
 

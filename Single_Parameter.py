@@ -7,5 +7,5 @@ class SingleParameter:
         self.request = requests.get(self.URL)
         self.resp_json = self.request.json
 
-x = SingleParameter()
-print(x)
+    def data_response(self):
+        return SingleParameterModel(self.resp_json)

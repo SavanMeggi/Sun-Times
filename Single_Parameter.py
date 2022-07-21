@@ -15,5 +15,4 @@ class SingleParameter:
         return SingleParameterModel(self.resp_json)
 
 
-x = SingleParameter('lat=4.4')
-print(x.data_response().sunrise)
+
